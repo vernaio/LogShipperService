@@ -9,6 +9,7 @@ ENV ELASTIC_SEARCH_PWD=
 # copy configuration
 COPY --chown=fluent:fluent ["fluent.conf", "/fluentd/"]
 
+# be root user for install block
 USER root
 
 # install plugins
